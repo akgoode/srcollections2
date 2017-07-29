@@ -1,5 +1,7 @@
+@import '../../stylesheets/variables.scss';
+
 .App-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/titlebackground.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/titlebackground.jpg');
   color: $titlefontcolor;
   font-family: $titlefont;
   font-weight: bold;

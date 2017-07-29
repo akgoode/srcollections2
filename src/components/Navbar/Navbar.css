@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Petit+Formal+Script");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
 .navbar {
   margin: 0 10%; }
 
 ul {
-  font-family: 'Lobster Two';
+  font-family: "Lobster Two";
   font-size: 1.5em;
   list-style-type: none; }
 
@@ -12,13 +14,15 @@ li {
   text-align: center;
   text-decoration: none;
   width: 15%; }
+  li a {
+    color: #000;
+    text-decoration: none; }
 
 li:hover {
   background-color: #e3e5ea; }
 
-a {
-  color: #000; }
-
-a:hover {
-  color: #000;
+.navlink {
   text-decoration: none; }
+  .navlink:hover {
+    color: #000;
+    text-decoration: none; }

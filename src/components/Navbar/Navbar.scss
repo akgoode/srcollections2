@@ -1,3 +1,5 @@
+@import '../../stylesheets/variables.scss';
+
 .navbar {
   margin: 0 10%;
 }
@@ -14,17 +16,20 @@ li {
   text-align: center;
   text-decoration: none;
   width: 15%;
+  a {
+    color: $linkcolor;
+    text-decoration: none;
+  }
 }
 
 li:hover {
   background-color: $navitemhovercolor;
 }
 
-a {
-  color: $linkcolor;
-}
-
-a:hover {
-  color: $linkcolor;
+.navlink {
   text-decoration: none;
+  &:hover {
+    color: $linkcolor;
+    text-decoration: none;
+  }
 }

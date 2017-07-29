@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Petit+Formal+Script");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
 .App-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/titlebackground.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/titlebackground.jpg");
   color: #fff;
   font-family: "Petit Formal Script";
   font-weight: bold;
