@@ -1,6 +1,39 @@
-.carousel-image{
-  height: auto;
-  width: auto;
+@import '../../stylesheets/variables.scss';
+
+.carousel-image {
+  max-height: 630px;
   max-width: 990px;
-  max-height: 600px;
+  min-height: 600px;
+  min-width: 900px;
+  margin: 0 auto;
+  width: auto;
+
+}
+
+.carousel-image-text {
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-radius: 5px;
+  font-family: $carouselTextFont;
+  font-size: 1.2em;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+  width: 80%;
+  top: 430px;
+}
+
+.image1 {
+  background: url('./carouselimage1.jpg') center center;
+  background-size: cover;
+}
+
+.image2 {
+  background: url('./carouselimage2.jpg') center center;
+  background-size: cover;
+}
+
+.image3 {
+  background: url('./carouselimage3.jpg') center center;
+  background-size: cover;
 }

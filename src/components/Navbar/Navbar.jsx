@@ -4,14 +4,14 @@ import './Navbar.css';
 export class Navbar extends Component {
   render () {
     return (
-      <div className="navbar navbar-collapse" id="navigation">
+      <div className="mynavbar">
         <ul>
-          <li><a className="navlink" href="/furniture">Furniture</a></li>
-          <li><a className="navlink" href="/objects">Objects</a></li>
-          <li><a className="navlink" href="/artists">Jewelry</a></li>
-          <li><a className="navlink" href="/silver">Silver</a></li>
-          <li><a className="navlink" href="/vintagepurses">Purses</a></li>
-          <li><a className="navlink" href="/information">Information</a></li>
+          <a className="navlink" href="/furniture"><li>Furniture</li></a>
+          <a className="navlink" href="/objects"><li>Objects</li></a>
+          <a className="navlink" href="/artists"><li>Jewelry</li></a>
+          <a className="navlink" href="/silver"><li>Silver</li></a>
+          <a className="navlink" href="/vintagepurses"><li>Purses</li></a>
+          <a className="navlink" href="/information"><li>Information</li></a>
         </ul>
       </div>
     );

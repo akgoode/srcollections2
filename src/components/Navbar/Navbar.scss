@@ -1,35 +1,34 @@
 @import '../../stylesheets/variables.scss';
 
-.navbar {
+.mynavbar {
   margin: 0 10%;
-}
 
-ul {
-  font-family: $navfont;
-  font-size: 1.5em;
-  list-style-type: none;
-}
+  ul {
+    font-family: $navfont;
+    font-size: 1.5em;
+    list-style-type: none;
+  }
 
-li {
-  display: inline-block;
-  padding: 10px 0;
-  text-align: center;
-  text-decoration: none;
-  width: 15%;
   a {
     color: $linkcolor;
     text-decoration: none;
+    li {
+      display: inline-block;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: inherit;
+      width: 15%;
+    }
   }
-}
 
-li:hover {
-  background-color: $navitemhovercolor;
-}
+  li:hover {
+    background-color: $navitemhovercolor;
+  }
 
-.navlink {
-  text-decoration: none;
-  &:hover {
-    color: $linkcolor;
-    text-decoration: none;
+  .navlink {
+    &:hover {
+      color: $linkcolor;
+      text-decoration: none;
+    }
   }
 }

@@ -1,0 +1,15 @@
+@import '../../stylesheets/variables.scss';
+
+.pagefooter {
+  margin-top: 15px;
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+  }
+
+}
