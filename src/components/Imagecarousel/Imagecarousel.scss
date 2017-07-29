@@ -12,8 +12,8 @@
 
 .carousel-image-text {
   background: $blackgradient;
-  border: 1px solid $white;
   border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.6);
   color: $white;
   font-family: $carouseltextfont;
   font-size: 1.2em;
