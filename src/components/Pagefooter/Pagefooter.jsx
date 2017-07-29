@@ -8,10 +8,11 @@ export class Pagefooter extends Component {
     return (
       <div className="pagefooter">
         <ul>
-          <li><a href={email}>Email</a></li>
+          <a href={email}><li>Email: {labels.email}</li></a>
           <li>Phone: {labels.phone}</li>
           <li>Locations: {labels.locations}</li>
         </ul>
+        <p>{labels.copyright}</p>
       </div>
     );
   }

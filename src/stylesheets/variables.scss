@@ -1,17 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Overlock|Petit+Formal+Script');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Overlock|Petit+Formal+Script|Syncopate:400,700');
 
 
-// COLORS
-$body-background-color: #fff;
-$header-background-color: #fff;
-$titlefontcolor: #fff;
-$content-background-color: #fff;
-$header-font-color: #000;
-$linkcolor: #000;
-$navitemhovercolor: #e3e5ea;
-$navfont: 'Lobster Two';
-$titlefont: 'Petit Formal Script';
-$carouselTextFont: 'Overlock';
+// COLOR LITERALS
+$white: #fff;
+$black: #000;
+$lightgray: #e3e5ea;
+
+// COMPONENT COLORS
+$body-background-color: $white;
+$header-background-color: $white;
+$titlefontcolor: $white;
+$content-background-color: $white;
+$header-font-color: $black;
+$linkcolor: $black;
+$navitemhovercolor: $lightgray;
+
+// FONTS
+$navfont: 'Syncopate';
+$titlefont: 'Syncopate';
+$carouseltextfont: 'Overlock';
+$footerfont: 'Overlock';
+
+// GRADIENTS
+$whitegradient: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+$blackgradient: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+$titlegradient: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 
 
 // BREAKPOINTS

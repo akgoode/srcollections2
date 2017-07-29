@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Overlock|Petit+Formal+Script");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Overlock|Petit+Formal+Script|Syncopate:400,700");
 .mynavbar {
   margin: 0 10%; }
   .mynavbar ul {
-    font-family: "Lobster Two";
-    font-size: 1.5em;
+    font-family: "Syncopate";
+    font-size: 1.3em;
     list-style-type: none; }
   .mynavbar a {
     color: #000;

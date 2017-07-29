@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './Imagecarousel.css';
 import labels from '../../labels/sitecontent.json';
-import image1 from './carouselimage1.jpg';
-import image2 from './carouselimage2.jpg';
-import image3 from './carouselimage3.jpg';
 import 'react-bootstrap-carousel/dist/bootstrap.min.css';
 import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 import {React_Bootstrap_Carousel} from 'react-bootstrap-carousel';
