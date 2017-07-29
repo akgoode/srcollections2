@@ -1,0 +1,30 @@
+.navbar {
+  margin: 0 10%;
+}
+
+ul {
+  font-family: $navfont;
+  font-size: 1.5em;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 15%;
+}
+
+li:hover {
+  background-color: $navitemhovercolor;
+}
+
+a {
+  color: $linkcolor;
+}
+
+a:hover {
+  color: $linkcolor;
+  text-decoration: none;
+}

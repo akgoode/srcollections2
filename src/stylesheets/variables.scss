@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+
+// COLORS
+$body-background-color: #fff;
+$header-background-color: #fff;
+$titlefontcolor: #fff;
+$content-background-color: #fff;
+$header-font-color: #000;
+$linkcolor: #000;
+$navitemhovercolor: #e3e5ea;
+$navfont: 'Lobster Two';
+$titlefont: 'Petit Formal Script';
+
+
+// BREAKPOINTS
+$mobile: 414px;
+$tablet: 768;
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) { @content ; }
+ }
+  @else if $point == laptop {
+    @media (min-width: 64em) { @content ; }
+ }
+   @else if $point == tablet {
+    @media (min-width: 50em) { @content ; }
+ }
+ @else if $point == mobileonly {
+    @media (max-width: 414px)  { @content ; }
+ }
+}
