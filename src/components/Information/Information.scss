@@ -1,0 +1,16 @@
+@import '../../stylesheets/variables.scss';
+
+.infoblock {
+  border: 1px solid $white;
+  display: inline-block;
+}
+
+.infoleft {
+  bottom: 100px;
+  position: relative;
+  width: 50%;
+}
+
+.inforight {
+  height: 200px;
+}

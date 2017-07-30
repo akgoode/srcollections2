@@ -6,5 +6,28 @@
   "email": "collections@srcollections.net",
   "phone": "214-252-9041",
   "locations": "Dallas, New York",
-  "copyright": "Copyright 2017 Sally Rosen"
+  "copyright": "Copyright 2017 Sally Rosen",
+  "collectionInfo": "THE CURRENT COLLECTION: Admire the latest acquisitions by prominent European and American designers.  Experience exceptional sculptural ceramics, jewelry, and classic, modernist furniture created by master artisans and craftsman.  Elegant and timeless, it's the best of the 1920's through the 1990's.",
+  "dealers": [
+    { "name": "Line Vautrin" },
+    { "name": "Isabel Canovas" },
+    { "name": "Chanel" },
+    { "name": "Edouard Cazaux" },
+    { "name": "Claude Montana" },
+    { "name": "Cathernie Noll" },
+    { "name": "Fantoni" },
+    { "name": "Borovier" },
+    { "name": "Yves St. Laurent" },
+    { "name": "Claude Lalanne" },
+    { "name": "Maurice Pre" },
+    { "name": "Samuel Marx" },
+    { "name": "Pierre Cardin" },
+    { "name": "Barbini" },
+    { "name": "Le Corbusier" },
+    { "name": "Alexandre Noll" },
+    { "name": "Elisabeth Joulia" },
+    { "name": "Yves Mohy" },
+    { "name": "Paul Frankl" },
+    { "name": "Osvaldo Borsani" }
+  ]
 }
