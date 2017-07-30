@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import './Navbar.css';
 
 export class ResponsiveNavbar extends Component {
@@ -13,12 +13,24 @@ export class ResponsiveNavbar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem eventKey={1}><Link to='/furniture/' className="navlink"><li>Furniture</li></Link></NavItem>
-            <NavItem eventKey={2}><Link to='/objects/' className="navlink"><li>Objects</li></Link></NavItem>
-            <NavItem eventKey={3}><Link to='/jewelry/' className="navlink"><li>Jewelry</li></Link></NavItem>
-            <NavItem eventKey={4}><Link to='/silver/' className="navlink"><li>Silver</li></Link></NavItem>
-            <NavItem eventKey={5}><Link to='/purses/' className="navlink"><li>Purses</li></Link></NavItem>
-            <NavItem eventKey={6}><Link to='/information/' className="navlink"><li>Information</li></Link></NavItem>
+            <LinkContainer to="/furniture/" className="navlink">
+              <NavItem eventKey={1}>Furniture</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/objects/" className="navlink">
+              <NavItem eventKey={2}>Objects</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/Jewelry/" className="navlink">
+              <NavItem eventKey={3}>Jewelry</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/Silver/" className="navlink">
+              <NavItem eventKey={4}>Silver</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/Purses/" className="navlink">
+              <NavItem eventKey={5}>Purses</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/Information/" className="navlink">
+              <NavItem eventKey={6}>Information</NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

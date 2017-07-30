@@ -10,16 +10,17 @@
     list-style-type: none;
   }
 
+  .navitem {
+    display: inline-block;
+    float: none;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: inherit;
+  }
+
   a {
     color: $linkcolor;
     text-decoration: none;
-    li {
-      display: inline-block;
-      float: none;
-      padding: 10px 0;
-      text-align: center;
-      text-decoration: inherit;
-    }
   }
 
   li:hover {
