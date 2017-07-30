@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import { Item } from '../Item';
 
 export class Furniture extends Component {
   render () {
     return (
       <div>
-        <h1>Furniture!</h1>
+        <Item/>
+        <Item/>
+        <Item/>
+        <Item/>
       </div>
     );
   }
