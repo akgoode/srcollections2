@@ -1,8 +1,12 @@
 @import '../../stylesheets/variables.scss';
 
+.center {
+  margin: 0 auto !important;
+}
+
 .mynavbar {
+  margin-bottom: 0px !important;
   width: 100%;
-  text-align: center;
 
   ul {
     font-family: $navfont;
@@ -15,6 +19,7 @@
     text-decoration: none;
     li {
       display: inline-block;
+      float: none;
       padding: 10px 0;
       text-align: center;
       text-decoration: inherit;

@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two|Overlock|Petit+Formal+Script|Syncopate:400,700");
+.center {
+  margin: 0 auto !important; }
+
 .mynavbar {
-  width: 100%;
-  text-align: center; }
+  margin-bottom: 0px !important;
+  width: 100%; }
   .mynavbar ul {
     font-family: "Syncopate";
     font-size: 1.3em;
@@ -11,6 +14,7 @@
     text-decoration: none; }
     .mynavbar a li {
       display: inline-block;
+      float: none;
       padding: 10px 0;
       text-align: center;
       text-decoration: inherit; }
