@@ -12,7 +12,9 @@ class App extends Component {
       <div className="App">
         <Pagetitle />
         <Navbar />
-        <Main />
+        <div className="maincontainer">
+          <Main />
+        </div>
         <Pagefooter />
       </div>
     );
