@@ -6,7 +6,7 @@ export class Item extends Component {
   render () {
     let item = this.props;
     return (
-      <div className='item'>
+      <div className='itempill'>
         <h5>{item.name}</h5>
         <p>{item.description}</p>
         <p>{item.creator}</p>

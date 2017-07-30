@@ -2,11 +2,10 @@
 
 .carousel-image {
   max-height: 630px;
-  max-width: 200px;
+  max-width: 900px;
   min-height: 600px;
   min-width: 900px;
   margin: 0 auto;
-
   @include breakpoint (mobile) {
     max-height: 240px;
     max-width: 375px;
