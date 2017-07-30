@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two|Overlock|Petit+Formal+Script|Syncopate:400,700");
 .mynavbar {
-  margin: 0 10%; }
+  width: 100%;
+  text-align: center; }
   .mynavbar ul {
     font-family: "Syncopate";
     font-size: 1.3em;
@@ -12,10 +13,14 @@
       display: inline-block;
       padding: 10px 0;
       text-align: center;
-      text-decoration: inherit;
-      width: 15%; }
+      text-decoration: inherit; }
   .mynavbar li:hover {
     background-color: #e3e5ea; }
   .mynavbar .navlink:hover {
     color: #000;
     text-decoration: none; }
+  @media only screen and (max-width: 414px) {
+    .mynavbar ul {
+      font-size: 1em; }
+    .mynavbar li {
+      padding: 5px 0; } }

@@ -4,7 +4,6 @@
   color: #000;
   font-family: "Syncopate";
   font-size: 1.4em;
-  font-weight: 700;
   height: 120px;
   padding: 20px;
   text-decoration: none; }
@@ -14,3 +13,9 @@
     .App-header .linkstyles:hover {
       color: #e3e5ea;
       text-decoration: none; }
+  @media only screen and (max-width: 414px) {
+    .App-header {
+      height: 100px;
+      padding: 2px; }
+      .App-header h1 {
+        font-size: 22px; } }

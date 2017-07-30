@@ -33,15 +33,12 @@ $tablet: 768;
 
 @mixin breakpoint($point) {
   @if $point == desktop {
-    @media (min-width: 70em) { @content ; }
- }
-  @else if $point == laptop {
-    @media (min-width: 64em) { @content ; }
- }
-   @else if $point == tablet {
-    @media (min-width: 50em) { @content ; }
- }
- @else if $point == mobileonly {
-    @media (max-width: 414px)  { @content ; }
+    @media only screen and (min-width: 70em) { @content ; }
+ } @else if $point == laptop {
+    @media only screen and (min-width: 64em) { @content ; }
+ } @else if $point == tablet {
+    @media only screen and (min-width: 50em) { @content ; }
+ } @else if $point == mobile {
+    @media only screen and (max-width: 414px)  { @content ; }
  }
 }
