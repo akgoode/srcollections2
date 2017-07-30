@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
-
+import getItems from '../xhr';
 export class Item extends Component {
+
+  componentDidMount(){
+    getItems()
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
   render () {
     return (
       <div className='item'>
