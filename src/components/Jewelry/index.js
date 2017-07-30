@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { ItemHandler } from '../ItemHandler';
 
 export class Jewelry extends Component {
   render () {
     return (
       <div>
-        <h1>Jewelry!</h1>
+        <ItemHandler type="jewelry" />
       </div>
     );
   }

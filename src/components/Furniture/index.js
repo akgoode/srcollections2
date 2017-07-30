@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Item } from '../Item';
+import { ItemHandler } from '../ItemHandler';
 
 export class Furniture extends Component {
   render () {
     return (
       <div>
-        <Item/>
+        <ItemHandler type="furniture"/>
       </div>
     );
   }

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { ItemHandler } from '../ItemHandler';
 
 export class Silver extends Component {
   render () {
     return (
       <div>
-        <h1>Silver!</h1>
+        <ItemHandler type="silver" />
       </div>
     );
   }

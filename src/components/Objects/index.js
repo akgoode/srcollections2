@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { ItemHandler } from '../ItemHandler';
 
 export class Objects extends Component {
   render () {
     return (
       <div>
-        <h1>Objects!</h1>
+        <ItemHandler type="objects"/>
       </div>
     );
   }
