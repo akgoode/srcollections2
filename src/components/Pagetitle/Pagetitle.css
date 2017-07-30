@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two|Overlock|Petit+Formal+Script|Syncopate:400,700");
 .App-header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/titlebackground.jpg");
-  color: #fff;
+  color: #000;
   font-family: "Syncopate";
   font-size: 1.4em;
   font-weight: 700;
   height: 120px;
-  padding: 20px; }
+  padding: 20px;
+  text-decoration: none; }
+  .App-header .linkstyles {
+    color: #fff;
+    text-decoration: none; }
+    .App-header .linkstyles:hover {
+      color: #e3e5ea;
+      text-decoration: none; }

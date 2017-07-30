@@ -2,10 +2,22 @@
 
 .App-header {
   background: $titlegradient, url('../../images/titlebackground.jpg');
-  color: $titlefontcolor;
+  color: $linkcolor;
   font-family: $titlefont;
   font-size: 1.4em;
   font-weight: 700;
   height: 120px;
   padding: 20px;
+  text-decoration: none;
+
+
+  .linkstyles {
+    color: $titlefontcolor;
+    text-decoration: none;
+
+    &:hover {
+      color: $lightgray;
+      text-decoration: none;
+    }
+  }
 }
