@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Imagecarousel } from '../Imagecarousel/Imagecarousel.jsx';
+import { Imagecarousel } from '../Imagecarousel';
 import './Titlebody.css';
 
 export class Titlebody extends Component {

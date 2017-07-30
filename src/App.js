@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { ResponsiveNavbar } from './components/Navbar/Navbar.jsx';
-import { Pagetitle } from './components/Pagetitle/Pagetitle.jsx';
-import { Pagefooter } from './components/Pagefooter/Pagefooter.jsx';
-import { Main } from './components/Main/Main.jsx';
+import { ResponsiveNavbar } from './components/Navbar';
+import { Pagetitle } from './components/Pagetitle';
+import { Pagefooter } from './components/Pagefooter';
+import { Main } from './components/Main';
 import './App.css';
 
 class App extends Component {

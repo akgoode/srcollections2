@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Titlebody } from '../Titlebody/Titlebody.jsx';
-import { Jewelry } from '../Jewelry/Jewelry.jsx';
-import { Furniture } from '../Furniture/Furniture.jsx';
-import { Objects } from '../Objects/Objects.jsx';
-import { Silver } from '../Silver/Silver.jsx';
-import { Purses } from '../Purses/Purses.jsx';
-import { Information } from '../Information/Information.jsx';
+import { Titlebody } from '../Titlebody';
+import { Jewelry } from '../Jewelry';
+import { Furniture } from '../Furniture';
+import { Objects } from '../Objects';
+import { Silver } from '../Silver';
+import { Purses } from '../Purses';
+import { Information } from '../Information';
 
 
 export class Main extends Component {
