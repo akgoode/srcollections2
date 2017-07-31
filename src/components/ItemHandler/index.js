@@ -46,7 +46,7 @@ export class ItemHandler extends Component {
     const type = this.props.type;
     return (
       <div className='itemcontainer'>
-        <h3>{type}</h3>
+        <h3>{type.charAt(0).toUpperCase() + type.slice(1)}</h3>
         {this.state.items.map(item => {
           return (
             <Item key={item.id}
