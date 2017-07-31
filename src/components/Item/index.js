@@ -7,7 +7,7 @@ export class Item extends Component {
   render () {
     let item = this.props.item;
     return (
-      <Link to={'/items/' + item.id}>
+      <Link to={'/items/' + item.id} className="nolinkstyling">
         <div className="itempill">
           <div className="imgcontainer">
             <img src={item.img} alt={item.description}/>

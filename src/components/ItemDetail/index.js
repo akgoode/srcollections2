@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getItem } from '../xhr';
+import './ItemDetail.css';
 
 export class ItemDetail extends Component {
   constructor(props) {
@@ -23,13 +24,15 @@ export class ItemDetail extends Component {
       return <div></div>;
     } else {
       return(
-        <div>
+        <div className="detailcontainer">
           <h1>{item.name}</h1>
-          <div>
+          <div className="detailimgcontainer">
             <img src={item.img} alt="item" />
           </div>
-          <p>{item.description}</p>
-          <p>{item.creator}</p>
+          <div className="detailtext">
+            <p>{item.description}</p>
+            <p>{item.creator}</p>
+          </div>
         </div>
       );
     }
