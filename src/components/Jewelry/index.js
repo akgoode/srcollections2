@@ -4,7 +4,7 @@ import { ItemHandler } from '../ItemHandler';
 export class Jewelry extends Component {
   render () {
     return (
-      <div>
+      <div className="productpage">
         <ItemHandler type="jewelry" />
       </div>
     );

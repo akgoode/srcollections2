@@ -1,8 +1,30 @@
 @import '../../stylesheets/variables.scss';
 
 .itempill {
-  border: 1px solid black;
+  background: $lightergray;
+  border-radius: 10px;
   display: inline-block;
-  margin: 20px 5%;
-  width: 20%;
+  font-family: 'Book Antiqua';
+  font-size: 1.3em;
+  margin: 20px 3%;
+  max-height: 365px;
+  min-height: 365px;
+  overflow: scroll;
+  width: 25%;
+
+  h2 {
+    margin-top: 5px;
+  }
+
+  .imgcontainer {
+    height: 200px;
+    margin: 10px auto;
+    width: 200px;
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      position: relative;
+    }
+  }
 }

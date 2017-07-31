@@ -31,6 +31,7 @@ export class ItemHandler extends Component {
         {this.state.items.map(item => {
           return (
             <Item key={item.id}
+                  img={item.img}
                   name={item.name}
                   description={item.description}
                   category={item.category}

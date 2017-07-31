@@ -7,7 +7,10 @@ export class Item extends Component {
     let item = this.props;
     return (
       <div className='itempill'>
-        <h5>{item.name}</h5>
+        <div className="imgcontainer">
+          <img src={item.img} />
+        </div>
+        <h2>{item.name}</h2>
         <p>{item.description}</p>
         <p>{item.creator}</p>
       </div>

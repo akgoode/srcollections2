@@ -3,4 +3,8 @@
 .itemcontainer {
   margin: 0 auto;
   width: 80%;
+
+  h3 {
+    font-family: $titlefont;
+  }
 }
