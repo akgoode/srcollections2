@@ -4,28 +4,28 @@ import { Titlebody } from '../Titlebody';
 import { Information } from '../Information';
 import { CategoryPage } from '../CategoryPage';
 
-
 export class Main extends Component {
+
   render() {
     return (
       <Switch>
         <Route exact path='/' component={Titlebody}/>
-        <Route path='/furniture'>
-          <CategoryPage type="furniture"/>
+        <Route exact path='/furniture'>
+          <CategoryPage type="furniture" onClick={this.handleClick} />
         </Route>
-        <Route path='/objects'>
+        <Route exact path='/objects'>
           <CategoryPage type="objects"/>
         </Route>
-        <Route path='/jewelry'>
+        <Route exact path='/jewelry'>
           <CategoryPage type="jewelry"/>
         </Route>
-        <Route path='/silver'>
+        <Route exact path='/silver'>
           <CategoryPage type="silver"/>
         </Route>
-        <Route path='/purses'>
+        <Route exact path='/purses'>
           <CategoryPage type='purses'/>
         </Route>
-        <Route path='/information' component={Information}/>
+        <Route exact path='/information' component={Information}/>
       </Switch>
     );
   }

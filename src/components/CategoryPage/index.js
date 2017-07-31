@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Item } from '../Item';
-import getItems from '../xhr';
+import { getItems } from '../xhr';
 import './CategoryPage.css';
 
 export class CategoryPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { items: [] };
+    this.state = { items: [], isDetailPage: false };
     this.getCategory.bind(this);
   }
 
@@ -49,8 +49,7 @@ export class CategoryPage extends Component {
         <h3>{type.charAt(0).toUpperCase() + type.slice(1)}</h3>
         {this.state.items.map(item => {
           return (
-            <Item key={item.id}
-                  item={item} />
+            <Item key={item.id} item={item} />
           );
         })}
       </div>
