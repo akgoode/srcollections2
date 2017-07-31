@@ -4,7 +4,7 @@ import './Item.css';
 export class Item extends Component {
 
   render () {
-    let item = this.props;
+    let item = this.props.item;
     return (
       <div className='itempill'>
         <div className="imgcontainer">
