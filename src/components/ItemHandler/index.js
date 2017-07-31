@@ -7,9 +7,10 @@ export class ItemHandler extends Component {
   constructor(props) {
     super(props);
     this.state = { items: [] };
+    this.getCategory.bind(this);
   }
 
-  componentDidMount(){
+  getCategory (){
     let type = this.props.type;
     getItems()
       .then(results => {
@@ -17,17 +18,35 @@ export class ItemHandler extends Component {
           return item.category === type;
         });
         this.setState({
-          items: typeItems
-        });
+          items: typeItems,
+          type: type
+        })
       })
       .catch(error => {
         console.error(error);
       });
   }
+
+  componentDidMount(){
+    this.getCategory();
+  }
+
+  shouldComponentUpdate (nextProps) {
+    if (this.state.type !== nextProps.type) {
+      return true;
+    }
+    return false;
+  }
+
+  componentDidUpdate () {
+    this.getCategory();
+  }
+
   render () {
+    const type = this.props.type;
     return (
       <div className='itemcontainer'>
-        <h3>{this.props.type.charAt(0).toUpperCase() + this.props.type.slice(1)}</h3>
+        <h3>{type}</h3>
         {this.state.items.map(item => {
           return (
             <Item key={item.id}

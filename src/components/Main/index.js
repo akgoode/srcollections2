@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Titlebody } from '../Titlebody';
-import { Jewelry } from '../Jewelry';
-import { Furniture } from '../Furniture';
-import { Objects } from '../Objects';
-import { Silver } from '../Silver';
-import { Purses } from '../Purses';
 import { Information } from '../Information';
+import { ItemHandler } from '../ItemHandler';
 
 
 export class Main extends Component {
@@ -14,11 +10,21 @@ export class Main extends Component {
     return (
       <Switch>
         <Route exact path='/' component={Titlebody}/>
-        <Route path='/furniture' component={Furniture}/>
-        <Route path='/objects' component={Objects}/>
-        <Route path='/jewelry' component={Jewelry}/>
-        <Route path='/silver' component={Silver}/>
-        <Route path='/purses' component={Purses}/>
+        <Route path='/furniture'>
+          <ItemHandler type="furniture"/>
+        </Route>
+        <Route path='/objects'>
+          <ItemHandler type="objects"/>
+        </Route>
+        <Route path='/jewelry'>
+          <ItemHandler type="jewelry"/>
+        </Route>
+        <Route path='/silver'>
+          <ItemHandler type="silver"/>
+        </Route>
+        <Route path='/purses'>
+          <ItemHandler type='purses'/>
+        </Route>
         <Route path='/information' component={Information}/>
       </Switch>
     );

@@ -19,16 +19,16 @@ export class ResponsiveNavbar extends Component {
             <LinkContainer to="/objects/" className="navlink">
               <NavItem eventKey={2}>Objects</NavItem>
             </LinkContainer>
-            <LinkContainer to="/Jewelry/" className="navlink">
+            <LinkContainer to="/jewelry/" className="navlink">
               <NavItem eventKey={3}>Jewelry</NavItem>
             </LinkContainer>
-            <LinkContainer to="/Silver/" className="navlink">
+            <LinkContainer to="/silver/" className="navlink">
               <NavItem eventKey={4}>Silver</NavItem>
             </LinkContainer>
-            <LinkContainer to="/Purses/" className="navlink">
+            <LinkContainer to="/purses/" className="navlink">
               <NavItem eventKey={5}>Purses</NavItem>
             </LinkContainer>
-            <LinkContainer to="/Information/" className="navlink">
+            <LinkContainer to="/information/" className="navlink">
               <NavItem eventKey={6}>Information</NavItem>
             </LinkContainer>
           </Nav>
