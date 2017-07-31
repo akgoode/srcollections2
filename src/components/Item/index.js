@@ -8,7 +8,7 @@ export class Item extends Component {
     return (
       <div className='itempill'>
         <div className="imgcontainer">
-          <img src={item.img} />
+          <img src={item.img} alt={item.description}/>
         </div>
         <h2>{item.name}</h2>
         <p>{item.description}</p>

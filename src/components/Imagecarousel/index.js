@@ -3,7 +3,7 @@ import './Imagecarousel.css';
 import labels from '../../labels/sitecontent.json';
 import 'react-bootstrap-carousel/dist/bootstrap.min.css';
 import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
-import {React_Bootstrap_Carousel} from 'react-bootstrap-carousel';
+import { React_Bootstrap_Carousel } from 'react-bootstrap-carousel';
 
 
 export class Imagecarousel extends Component {
