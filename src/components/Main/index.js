@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { Titlebody } from '../Titlebody';
 import { Information } from '../Information';
 import { CategoryPage } from '../CategoryPage';
+import { ItemDetail } from '../ItemDetail';
 
 export class Main extends Component {
 
@@ -10,22 +11,23 @@ export class Main extends Component {
     return (
       <Switch>
         <Route exact path='/' component={Titlebody}/>
-        <Route exact path='/furniture'>
-          <CategoryPage type="furniture" onClick={this.handleClick} />
+        <Route path = '/furniture/'>
+          <CategoryPage type="furniture"/>
         </Route>
-        <Route exact path='/objects'>
+        <Route path='/objects'>
           <CategoryPage type="objects"/>
         </Route>
-        <Route exact path='/jewelry'>
+        <Route path='/jewelry'>
           <CategoryPage type="jewelry"/>
         </Route>
-        <Route exact path='/silver'>
+        <Route path='/silver'>
           <CategoryPage type="silver"/>
         </Route>
-        <Route exact path='/purses'>
+        <Route path='/purses'>
           <CategoryPage type='purses'/>
         </Route>
-        <Route exact path='/information' component={Information}/>
+        <Route path='/information' component={Information}/>
+        <Route path='/items/:id' component={ItemDetail}/>
       </Switch>
     );
   }

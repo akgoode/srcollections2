@@ -6,7 +6,7 @@ import './CategoryPage.css';
 export class CategoryPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { items: [], isDetailPage: false };
+    this.state = { items: [], isDetailPage: this.props.isDetailPage };
     this.getCategory.bind(this);
   }
 
@@ -44,15 +44,19 @@ export class CategoryPage extends Component {
 
   render () {
     const type = this.props.type;
-    return (
-      <div className='itemcontainer'>
-        <h3>{type.charAt(0).toUpperCase() + type.slice(1)}</h3>
-        {this.state.items.map(item => {
-          return (
-            <Item key={item.id} item={item} />
-          );
-        })}
-      </div>
-    );
+    if (this.state.isDetailPage) {
+      return (<p>Hi</p>);
+    } else {
+      return (
+        <div className='itemcontainer'>
+          <h3>{type.charAt(0).toUpperCase() + type.slice(1)}</h3>
+          {this.state.items.map(item => {
+            return (
+              <Item key={item.id} item={item} />
+            );
+          })}
+        </div>
+      );
+    }
   }
 }

@@ -5,7 +5,7 @@ const getItems = function () {
 };
 
 const getItem = function (id) {
-  return axios.get("http://localhost:4741/items" + id);
+  return axios.get("http://localhost:4741/items/" + id);
 };
 
 export { getItems, getItem };
