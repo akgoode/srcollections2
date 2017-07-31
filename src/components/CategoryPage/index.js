@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Item } from '../Item';
 import getItems from '../xhr';
-import './Itemhandler.css';
+import './CategoryPage.css';
 
-export class ItemHandler extends Component {
+export class CategoryPage extends Component {
   constructor(props) {
     super(props);
     this.state = { items: [] };

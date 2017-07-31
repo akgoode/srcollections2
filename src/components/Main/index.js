@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Titlebody } from '../Titlebody';
 import { Information } from '../Information';
-import { ItemHandler } from '../ItemHandler';
+import { CategoryPage } from '../CategoryPage';
 
 
 export class Main extends Component {
@@ -11,19 +11,19 @@ export class Main extends Component {
       <Switch>
         <Route exact path='/' component={Titlebody}/>
         <Route path='/furniture'>
-          <ItemHandler type="furniture"/>
+          <CategoryPage type="furniture"/>
         </Route>
         <Route path='/objects'>
-          <ItemHandler type="objects"/>
+          <CategoryPage type="objects"/>
         </Route>
         <Route path='/jewelry'>
-          <ItemHandler type="jewelry"/>
+          <CategoryPage type="jewelry"/>
         </Route>
         <Route path='/silver'>
-          <ItemHandler type="silver"/>
+          <CategoryPage type="silver"/>
         </Route>
         <Route path='/purses'>
-          <ItemHandler type='purses'/>
+          <CategoryPage type='purses'/>
         </Route>
         <Route path='/information' component={Information}/>
       </Switch>
