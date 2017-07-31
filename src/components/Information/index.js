@@ -4,10 +4,6 @@ import labels from '../../labels/sitecontent.json';
 
 export class Information extends Component {
   render () {
-    const dealers = labels.dealers;
-    const dealerList = dealers.map((dealer, index) => {
-      return <li key={index}>{dealer.name}</li>
-    });
     return (
       <div className="titlebody">
         <div className="infoblock infoleft">
@@ -15,7 +11,9 @@ export class Information extends Component {
         </div>
         <div className="infoblock inforight">
           <ul>
-            {dealerList}
+            {labels.dealers.map((dealer, index) => {
+              return <li key={index}>{dealer.name}</li>
+            })}
           </ul>
         </div>
       </div>
