@@ -34,6 +34,12 @@
   &:hover {
     box-shadow: 5px 0 15px -5px;
   }
+
+  @include breakpoint(mobile) {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+  }
 }
 
 .nolinkstyling {
