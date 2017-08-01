@@ -12,9 +12,11 @@ export class Item extends Component {
           <div className="imgcontainer">
             <img src={item.img} alt={item.description}/>
           </div>
-          <h2> {item.name}</h2>
-          <p> {item.description}</p>
-          <p> {item.creator}</p>
+          <div>
+            <h2> {item.name}</h2>
+            <p> {item.headline}</p>
+            <p> {item.creator}</p>
+          </div>
         </div>
       </Link>
     );

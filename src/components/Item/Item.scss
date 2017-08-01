@@ -9,7 +9,8 @@
   margin: 20px 3%;
   max-height: 365px;
   min-height: 365px;
-  overflow: scroll;
+  overflow: hidden;
+  padding-bottom: 5px;
   width: 25%;
 
   h2 {
