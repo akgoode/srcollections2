@@ -10,7 +10,7 @@ export class Item extends Component {
       <Link to={'/items/' + item.id} className="nolinkstyling">
         <div className="itempill">
           <div className="imgcontainer">
-            <img src={item.img} alt={item.description}/>
+            <img src={item.img} alt={item.headline}/>
           </div>
           <div>
             <h2> {item.name}</h2>
