@@ -16,6 +16,7 @@
 
 .inforight {
   font-family: $footerfont;
+  padding-bottom: 30px;
 
   div {
     display: inline-block;
@@ -62,7 +63,7 @@
 
     ul {
       column-count: 1;
-      
+
       div{
         display: block;
       }

@@ -8,13 +8,11 @@
     font-family: $navfont;
     font-size: 1.3em;
     list-style-type: none;
+    margin: 0 auto;
   }
 
   .navitem {
-    display: inline-block;
-    float: none;
     padding: 10px 0;
-    text-align: center;
     text-decoration: inherit;
   }
 

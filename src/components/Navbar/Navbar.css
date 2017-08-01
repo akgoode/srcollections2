@@ -5,12 +5,10 @@
   .mynavbar ul {
     font-family: "Syncopate";
     font-size: 1.3em;
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0 auto; }
   .mynavbar .navitem {
-    display: inline-block;
-    float: none;
     padding: 10px 0;
-    text-align: center;
     text-decoration: inherit; }
   .mynavbar a {
     color: #000;
