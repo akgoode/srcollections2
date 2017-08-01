@@ -5,16 +5,26 @@ import labels from '../../labels/sitecontent.json';
 export class Information extends Component {
   render () {
     return (
-      <div className="titlebody">
+      <div className="infocontainer">
         <div className="infoblock infoleft">
           <p>{labels.collectionInfo}</p>
         </div>
         <div className="infoblock inforight">
-          <ul>
-            {labels.dealers.map((dealer, index) => {
-              return <li key={index}>{dealer.name}</li>
-            })}
-          </ul>
+          <div className="infoimgcontainer">
+            <img src={require('../../images/sallybanner.jpg')} alt='sallybanner'/>
+          </div>
+          <div>
+            <h3>Pieces by: </h3>
+            <ul>
+              {labels.dealers.map((dealer, index) => {
+                return (
+                  <div className="columnfix">
+                    <li key={index}>{dealer.name}</li>
+                  </div>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     );

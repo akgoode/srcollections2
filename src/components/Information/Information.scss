@@ -1,16 +1,71 @@
 @import '../../stylesheets/variables.scss';
 
-.infoblock {
-  border: 1px solid $white;
-  display: inline-block;
+.infocontainer {
+  background: $lightergray;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
 }
 
 .infoleft {
-  bottom: 100px;
-  position: relative;
-  width: 50%;
+  font-family: $footerfont;
+  font-size: 1.6em;
+  padding: 30px;
 }
 
 .inforight {
-  height: 200px;
+  font-family: $footerfont;
+
+  div {
+    display: inline-block;
+    margin: 0 3%;
+    text-align: center;
+    vertical-align: top;
+    width: 40%;
+  }
+
+  img {
+    width: 450px;
+  }
+
+  ul {
+    column-count: 2;
+    font-size: 1.3em;
+    list-style-type: none;
+
+    .columnfix {
+      margin: 12px 20px;
+      width: auto;
+    }
+  }
+
+  @include breakpoint (tablet) {
+
+    ul {
+      column-count: 1;
+
+      div {
+        display: block;
+      }
+    }
+
+    .inforight {
+      div {
+        display: block;
+      }
+    }
+  }
+
+  @include breakpoint (mobile) {
+    column-count: 1;
+
+    ul {
+      column-count: 1;
+      
+      div{
+        display: block;
+      }
+    }
+  }
 }
