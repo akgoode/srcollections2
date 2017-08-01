@@ -41,8 +41,8 @@ $tablet: 768;
  } @else if $point == laptop {
     @media only screen and (min-width: 64em) { @content ; }
  } @else if $point == tablet {
-    @media only screen and (min-width: 50em) { @content ; }
+    @media only screen and (min-width: 750px) and (max-width: 1000px) { @content ; }
  } @else if $point == mobile {
-    @media only screen and (max-width: 414px)  { @content ; }
+    @media only screen and (max-width: 450px)  { @content ; }
  }
 }

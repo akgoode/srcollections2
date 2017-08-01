@@ -42,4 +42,12 @@
       padding: 5px 0;
     }
   }
+  @include breakpoint(tablet) {
+    ul {
+      font-size: 1em;
+    }
+    li {
+      padding: 5px 0;
+    }
+  }
 }

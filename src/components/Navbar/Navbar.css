@@ -20,7 +20,12 @@
   .mynavbar .navlink:hover {
     color: #000;
     text-decoration: none; }
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 450px) {
+    .mynavbar ul {
+      font-size: 1em; }
+    .mynavbar li {
+      padding: 5px 0; } }
+  @media only screen and (min-width: 750px) and (max-width: 1000px) {
     .mynavbar ul {
       font-size: 1em; }
     .mynavbar li {
