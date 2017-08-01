@@ -31,7 +31,8 @@ export class ItemDetail extends Component {
           </div>
           <div className="detailtext">
             <p>{item.description}</p>
-            <p>{item.creator}</p>
+            <p>Category: {item.category.charAt(0).toUpperCase() + item.category.slice(1)}</p>
+            <h3>Created by: {item.creator}</h3>
           </div>
         </div>
       );
