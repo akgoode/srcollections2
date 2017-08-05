@@ -4,6 +4,7 @@ import { Titlebody } from '../Titlebody';
 import { Information } from '../Information';
 import { CategoryPage } from '../CategoryPage';
 import { ItemDetail } from '../ItemDetail';
+import labels from '../../labels/sitecontent.json';
 
 export class Main extends Component {
 
@@ -11,21 +12,13 @@ export class Main extends Component {
     return (
       <Switch>
         <Route exact path='/' component={Titlebody}/>
-        <Route path = '/furniture/'>
-          <CategoryPage type="furniture"/>
-        </Route>
-        <Route path='/objects'>
-          <CategoryPage type="objects"/>
-        </Route>
-        <Route path='/jewelry'>
-          <CategoryPage type="jewelry"/>
-        </Route>
-        <Route path='/silver'>
-          <CategoryPage type="silver"/>
-        </Route>
-        <Route path='/purses'>
-          <CategoryPage type='purses'/>
-        </Route>
+        { labels.categories.map(category => {
+          return (
+            <Route path = {`/${category.name}/`}>
+              <CategoryPage type={`${category.name}`}/>
+            </Route>
+          );
+        })}
         <Route path='/information' component={Information}/>
         <Route path='/items/:id' component={ItemDetail}/>
       </Switch>

@@ -29,5 +29,12 @@
     { "name": "Yves Mohy" },
     { "name": "Paul Frankl" },
     { "name": "Osvaldo Borsani" }
+  ],
+  "categories": [
+    { "name": "furniture" },
+    { "name": "objects" },
+    { "name": "jewelry" },
+    { "name": "silver" },
+    { "name": "purses" }
   ]
 }
