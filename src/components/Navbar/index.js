@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './Navbar.css';
+import labels from '../../labels/sitecontent.json';
 
 export class ResponsiveNavbar extends Component {
 
@@ -13,23 +14,15 @@ export class ResponsiveNavbar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <LinkContainer to="/furniture/" className="navlink">
-              <NavItem eventKey={1}>Furniture</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/objects/" className="navlink">
-              <NavItem eventKey={2}>Objects</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/jewelry/" className="navlink">
-              <NavItem eventKey={3}>Jewelry</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/silver/" className="navlink">
-              <NavItem eventKey={4}>Silver</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/purses/" className="navlink">
-              <NavItem eventKey={5}>Purses</NavItem>
-            </LinkContainer>
+            { labels.categories.map(category => {
+              return (
+                <LinkContainer to={ "/" + category.name + "/" } className="navlink">
+                  <NavItem eventKey={labels.categories.indexOf(category) + 1}>{ category.name }</NavItem>
+                </LinkContainer>
+              );
+            })}
             <LinkContainer to="/information/" className="navlink">
-              <NavItem eventKey={6}>Information</NavItem>
+              <NavItem eventKey={labels.categories.length}>Information</NavItem>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
