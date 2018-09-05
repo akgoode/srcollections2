@@ -18,7 +18,7 @@ export class Information extends Component {
             <ul>
               {labels.dealers.map((dealer, index) => {
                 return (
-                  <div className="columnfix">
+                  <div key={labels.dealers.indexOf(dealer) + 1} className="columnfix">
                     <li key={index}>{dealer.name}</li>
                   </div>
                 );

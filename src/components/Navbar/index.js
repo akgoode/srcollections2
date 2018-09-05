@@ -16,7 +16,7 @@ export class ResponsiveNavbar extends Component {
           <Nav>
             { labels.categories.map(category => {
               return (
-                <LinkContainer to={ "/" + category.name + "/" } className="navlink">
+                <LinkContainer key={labels.categories.indexOf(category) + 1} to={ "/" + category.name + "/" } className="navlink">
                   <NavItem eventKey={labels.categories.indexOf(category) + 1}>{ category.name }</NavItem>
                 </LinkContainer>
               );

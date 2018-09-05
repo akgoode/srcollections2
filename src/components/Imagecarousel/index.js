@@ -7,7 +7,7 @@ import { React_Bootstrap_Carousel } from 'react-bootstrap-carousel';
 
 
 export class Imagecarousel extends Component {
-    onSelect= (active,direction)=>{
+    onSelect (active,direction){
       console.log(`active=${active} && direction=${direction}`);
     }
     render() {

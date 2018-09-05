@@ -14,7 +14,7 @@ export class Main extends Component {
         <Route exact path='/' component={Titlebody}/>
         { labels.categories.map(category => {
           return (
-            <Route path = {`/${category.name}/`}>
+            <Route key={labels.categories.indexOf(category) + 1} path = {`/${category.name}/`}>
               <CategoryPage type={`${category.name}`}/>
             </Route>
           );
